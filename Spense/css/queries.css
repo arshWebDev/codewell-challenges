@@ -1,0 +1,345 @@
+
+/***** for devices with width of 700px or more *****/
+@media (min-width: 768px) {
+  body.stop-scrolling{
+    overflow: scroll;
+  }
+  .announcement{
+    padding: 15px 60px;
+  }
+  nav{
+    padding: 20px 60px;
+  }
+  .menu-btn{
+    display: none;
+  }
+  hr{
+    display: none;
+  }
+  .menu{
+    position: static;
+    width: 80%;
+    transform: translate(0);
+    background: none;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+  }
+  nav ul li{
+    display: inline-block;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    padding: 10px 15px;
+    transition: 0.3s ease-in-out;
+    border-radius: 5px;
+  }
+  nav ul li a:hover{
+    background: rgb(225, 225, 225);
+  }
+
+  .btn-container{
+    margin-top: 0;
+  }
+  .btn-container .btn{
+      display: inline-block;
+      margin-top: 0;
+  }
+
+  .hero-container{
+    padding: 0 60px;
+  }
+  .mobile-img{
+    display: none;
+  }
+  .tablet-img{
+    display: block;
+  }
+  .hero-text-container h1{
+    font-size: 2.4rem;
+  }
+  .hero-text-container p{
+    padding: 0 180px 0 0;
+  }
+  #email{
+    margin-right: 20px;
+  }
+
+  .companies-container{
+    padding: 0 40px;
+  }
+
+  .secure-container{
+    margin: 0 60px;
+  }
+  .secure-text-container{
+    margin-bottom: -40px;
+    padding: 60px 60px 0;
+  }
+  .secure-text-container h2{
+    font-size: 2rem;
+    padding-right: 240px;
+  }
+  .secure-text-container p{
+    padding-right: 60px;
+  }
+  
+  .editor-container{
+    padding: 0 60px;
+  }
+  .editor-text h2{
+    font-size: 2.2rem;
+  }
+
+  footer{
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 40px 60px;
+  }
+  .footer-left{
+    width: 40%;
+  }
+  .footer-right{
+    width: 50%;
+  }
+  .list{
+    width: 50%;
+  }
+  .sitemap-list{
+    order: 1;
+    margin-top: 0;
+  }
+  .company-list{
+    order: 3;
+  }
+  .opportunities-list{
+    order: 4;
+  }
+  .resources-list{
+    order: 2;
+    margin-top: 0;
+  }
+}
+
+/***** for devices with width of 1000px or more *****/
+@media (min-width: 1000px) {
+  .announcement{
+    padding: 15px 80px;
+  }
+  nav{
+    padding: 20px 80px;
+  }
+  .menu{
+    width: 65%;
+  }
+
+  .hero-container{
+    padding: 0 80px;
+  }
+
+  .companies-container{
+    padding: 0 60px;
+  }
+
+  .secure-container{
+    margin: 0 80px;
+  }
+  .secure-text-container h2{
+    padding-right: 440px;
+  }
+  .secure-text-container p{
+    padding-right: 200px;
+  }
+
+  .editor-container{
+    padding: 0 80px;
+  }
+  .editor-text p{
+    padding-right: 280px;
+  }
+
+  footer{
+    padding: 40px 80px;
+  }
+}
+
+/***** for devices with width of 1240px or more *****/
+@media (min-width: 1240px) {
+  .announcement{
+    padding: 15px 120px;
+  }
+  nav{
+    padding: 20px 120px;
+  }
+
+  .hero-container{
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 0 120px;
+  }
+  .hero-img-container{
+    width: 60%;
+  }
+  .desktop-img{
+    display: block;
+  }
+  .tablet-img{
+    display: none;
+  }
+  .hero-text-container h1{
+    font-size: 3.2rem;
+  }
+
+  .companies-container{
+    padding: 0 100px;
+  }
+
+  .secure-container{
+    flex-direction: row;
+    margin: 0 120px;
+    position: relative;
+  }
+  .secure-img-container img{
+    margin-bottom: 0;
+  }
+  .secure-text-container{
+    position: absolute;
+    width: 70%;
+    top: 50%;  left: 0;
+    transform: translate(0, -65%);
+  }
+  .secure-text-container h2{
+    padding-right: 50%;
+  }
+
+  .editor-container{
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 120px;
+  }
+  .editor-img-container{
+    width: 60%;
+  }
+  .editor-text{
+    width: 38%;
+  }
+  .editor-text h2,
+  .editor-text p{
+    padding-right: 0;
+  }
+
+  footer{
+    padding: 40px 120px;
+  }
+  .footer-left{
+    width: 30%;
+  }
+  .footer-right{
+    width: 60%;
+  }
+  .list{
+    width: 25%;
+    margin-top: 0;
+  }
+}
+
+/***** for devices with width of 1400px or more *****/
+@media (min-width: 1400px) {
+  .announcement{
+    padding: 15px 160px;
+  }
+  nav{
+    padding: 20px 160px;
+  }
+
+  .hero-container{
+    padding: 0 160px;
+  }
+
+  .companies-container{
+    padding: 0 140px;
+  }
+
+  .secure-container{
+    margin: 0 160px;
+  }
+
+  .editor-container{
+    padding: 0 160px;
+  }
+
+  footer{
+    padding: 40px 160px;
+  }
+}
+
+/***** for devices with width of 1500px or more *****/
+@media (min-width: 1500px) {
+  .announcement{
+    padding: 15px 220px;
+  }
+  nav{
+    padding: 20px 220px;
+  }
+
+  .hero-container{
+    padding: 0 220px;
+  }
+
+  .companies-container{
+    padding: 0 200px;
+  }
+
+  .secure-container{
+    margin: 0 220px;
+  }
+
+  .editor-container{
+    padding: 0 220px;
+  }
+
+  footer{
+    padding: 40px 220px;
+  }
+}
+
+/***** for devices with width of 1640px or more *****/
+@media (min-width: 1640px) {
+  .announcement{
+    padding: 15px 260px;
+  }
+  nav{
+    padding: 20px 260px;
+  }
+  .menu{
+    width: 60%;
+  }
+
+  .hero-container{
+    padding: 0 260px;
+  }
+
+  .companies-container{
+    padding: 0 240px;
+  }
+
+  .secure-container{
+    margin: 0 260px;
+  }
+
+  .secure-text-container h2{
+    padding-right: 65%;
+  }
+  .secure-text-container p{
+    padding-right: 375px;
+  }
+
+  .editor-container{
+    padding: 0 260px;
+  }
+
+  footer{
+    padding: 40px 260px;
+  }
+}
