@@ -7,4 +7,4 @@ Challenges by codewell
 * indiebrew landing page
 
 
-[click here](https://frontend-mentor-projects-iota.vercel.app) to view all the solutions.
+[click here](https://projects-theta-ten.vercel.app) to view all the solutions.
