@@ -1,0 +1,259 @@
+/************** for devices with width of 700px or more *************/
+@media (min-width: 700px) {
+  header{
+    padding: 0 0 100px;
+  }
+  nav{
+    padding: 50px 60px 0;
+  }
+  .sticky-nav{
+    padding: 20px 60px;
+  }
+  .menu-btn{
+    display: none;
+  }
+  nav ul {
+    position: static;
+    transform: translate(0);
+    background: none;
+    padding: 0;
+    text-align: start;
+    width: auto;
+  }
+  nav ul li{
+    display: inline-block;
+    margin: 0 0;
+    padding:  10px 20px;
+    transition: 0.3s;
+  }
+  nav ul li:hover{
+    background: rgb(230, 230, 230);
+  }
+  nav ul lI:last-child{
+    margin-top: 0;
+    padding: 0 0 0 10px;
+  }
+  nav ul li:last-child:hover{
+    background: none;
+  }
+
+  .about{
+    margin-top: 80px;
+    padding: 60px;
+  }
+  .about img{
+    width: 50%;
+  }
+  .about-info{
+    padding-right: 190px;
+  }
+
+  .social-media-container{
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 100px 0 0;
+    padding: 0 60px;
+  }
+  .social-media-container img{
+    width: 35%;
+    margin: 0 0 0 20px;
+  }
+  .social-media-text{
+    padding: 0;
+  }
+
+  .comfort-container{
+    margin-top: 160px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 60px;
+  }
+  .comfort-container img{
+    width: 40%;
+    margin: 0;
+  }
+  .comfort-text{
+    padding: 0;
+  }
+
+  footer{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px;
+  }
+  .footer-left{
+    width: 50%;
+  }
+  .footer-right{
+    width: 47%;
+    margin: 0;
+  }
+  .sitemap-list,
+  .resources-list{
+    margin: 0;
+  }
+}
+
+/************** for devices with width of 860px or more *************/
+@media (min-width: 860px) {
+  .about-info{
+    padding: 0 250px 0 0;
+  }
+}
+
+/************** for devices with width of 1000px or more *************/
+@media (min-width: 1000px) {
+  header{
+    min-height: 0;
+    padding: 0 0 100px;
+  }
+  nav{
+    padding: 50px 80px 0;
+  }
+  .sticky-nav{
+    padding: 20px 80px;
+  }
+
+  .about{
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0 80px;
+  }
+  .about-info{
+    padding: 0;
+  }
+
+  .social-media-container,
+   .comfort-container{
+    padding: 0 100px;
+  }
+  .social-media-text p{
+    padding-right: 80px;
+  }
+
+  footer{
+    padding: 60px 80px;
+  }
+  .footer-left{
+    width: 40%;
+  }
+}
+
+/************** for devices with width of 1240px or more *************/
+@media (min-width: 1240px){
+  header{
+    padding: 0 0 100px;
+  }
+  nav{
+    padding: 50px 120px 0;
+  }
+  .sticky-nav{
+    padding: 20px 120px;
+  }
+
+  .about{
+    padding: 0 120px;
+  }
+
+  .social-media-container,
+   .comfort-container{
+    padding: 0 120px;
+  }
+  .social-media-container img{
+    width: 30%;
+  }
+  .social-media-text{
+    width: 60%;
+  }
+
+  footer{
+    padding: 60px 120px;
+  }
+  .footer-left{
+    width: 32%;
+  }
+  .footer-right{
+    width: 60%;
+  }
+  .list{
+    width: 24%;
+    margin-top: 0;
+  }
+}
+
+/************** for devices with width of 1440px or more *************/
+@media (min-width: 1440px) {
+  header{
+    padding: 0 0 100px;
+  }
+  nav{
+    padding: 50px 180px 0;
+  }
+  .sticky-nav{
+    padding: 20px 180px;
+  }
+
+  .about{
+    padding: 0 180px;
+  }
+  .about-info{
+    width: 50%;
+  }
+
+  .social-media-container,
+   .comfort-container{
+    padding: 0 180px;
+  }
+  .social-media-text,
+  .comfort-text{
+    width: 50% ;
+  }
+
+  footer{
+    padding: 60px 180px;
+  }
+
+}
+
+/************** for devices with width of 1560px or more *************/
+@media (min-width: 1560px) {
+  header{
+    padding: 0 0 100px;
+  }
+  nav{
+    padding: 50px 220px 0;
+  }
+  .sticky-nav{
+    padding: 20px 220px;
+  }
+  .about{
+    padding: 0 220px;
+  }
+
+  .about-info p{
+    padding-right: 120px;
+  }
+
+  .social-media-container,
+  .comfort-container{
+    padding: 0 220px;
+  }
+  .social-media-container img,
+  .comfort-container img{
+     width: 40%;
+  }
+  .social-media-text{
+    width: 55%;
+  }
+  .comfort-text{
+    width: 45%;
+  }
+
+  footer{
+    padding: 60px 220px;
+  }
+  .footer-left{
+    width: 25%;
+  }
+}

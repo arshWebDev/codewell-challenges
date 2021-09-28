@@ -1,0 +1,92 @@
+
+/*********************** for devices with width of 700px or more **********************/
+@media (min-width: 700px) {
+  header{
+    padding: 30px 60px;
+  }
+  .back-icon{
+    padding: 6px 7px 5px 9px;
+    margin-right: 10px;
+  }
+  .back-text{
+    display: inline-block;
+    font-weight: 900;
+  }
+
+  main{
+    margin-top: 40px;
+    padding: 0 60px;
+  }
+
+  .sign-up-container{
+    margin-top: 40px;
+    width: 100%;
+    padding: 50px;
+  }
+}
+
+/*********************** for devices with width of 1000px or more **********************/
+@media (min-width: 1000px) {
+  header{
+    padding: 30px 80px;
+  }
+  main{
+    padding: 0 80px;
+  }
+}
+
+/*********************** for devices with width of 1240px or more **********************/
+@media (min-width: 1240px) {
+  body{
+    padding-bottom: 100px;
+  }
+  header{
+    padding: 50px 120px;
+  }
+  main{
+    margin-top: 40px;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 120px;
+  }
+  .text-container{
+    width: 35%;
+    margin-top: 140px;
+  }
+  .sign-up-container{
+    margin-top: 0;
+    width: 50%;
+    padding: 60px;
+  }
+}
+
+/*********************** for devices with width of 1440px or more **********************/
+@media (min-width: 1440px) {
+  header{
+    padding: 50px 180px;
+  }
+  main{
+    padding: 0 180px;
+  }
+}
+
+/*********************** for devices with width of 1560 or more ******************/
+@media (min-width: 1560px) {
+  header{
+    padding: 50px 220px;
+  }
+  main{
+    padding: 0 220px;
+  }
+}
+
+/*********************** for devices with width of 1660px or more **********************/
+@media (min-width: 1660px) {
+  .text-container{
+    width: 35%;
+  }
+  .sign-up-container{
+    width: 45%;
+  }
+}

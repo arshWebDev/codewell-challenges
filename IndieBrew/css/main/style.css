@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+:root{
+  /* color */
+  --blue-lotus: #664efc;
+  --light-grayish: #4f4f4f;
+  --very-light-purple: #eccdf5;
+  --carousel-pink: #f5e0ec;
+  --soft-peach: #fbf0ee;
+  --soapstone: #fdfcf9;
+  --white: #ffffff;
+  --black: #000;
+
+  /* font */
+  --dm-sans: 'DM Sans', sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--dm-sans);
+}
+
+.stop-scroll{
+  overflow: hidden;
+}
+
+/******************************* header *****************************/
+header{
+  min-height: 100vh;
+  background-image: radial-gradient(var(--very-light-purple), var(--carousel-pink), var(--soft-peach), var(--soapstone));
+  background-position: top -1000px left -500px;
+  background-size: cover;
+  padding-bottom: 100px;
+}
+
+/************************** nav bar **************************/
+nav{
+  padding: 20px 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+.sticky-nav{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  /* backdrop-filter: blur(8px); */
+  box-shadow: 0 5px 30px rgba(30, 30, 30, 0.3);
+}
+/* @supports / */
+
+nav ul{
+  list-style: none;
+  position: absolute;
+  top: -500px;
+  width: 90%;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 20px;
+  transition: 0.3s;
+}
+
+nav ul li{
+  margin: 20px 0;
+}
+nav ul lI:last-child{
+  margin-top: 40px;
+}
+nav ul li a{
+  color: var(--black);
+  font-weight: 500;
+  text-decoration: none;
+}
+.mobile-menu{
+  top: 100px;
+}
+
+.cta-btn{
+  background: var(--blue-lotus);
+  padding: 13px 18px;
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 700;
+  border: 2px solid var(--blue-lotus);
+  border-radius: 5px;
+  transition: .3s;
+}
+.cta-btn:hover{
+  background: none;
+  color: var(--black);
+}
+.cta-btn span{
+  color: rgb(247, 247, 247);
+  font-weight: 100;
+  transition: .3s;
+}
+.cta-btn:hover span{
+  color: #4f4f4f;
+}
+
+.menu-btn{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;  height: 30px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.menu-btn-burger{
+  width: 30px;  height: 3px;
+  background: #000;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn-burger::before,
+.menu-btn-burger::after{
+  content: "";
+  position: absolute;
+  width: 30px;  height: 3px;
+  background: #000;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn-burger::before{
+  transform: translateY(-8px);
+}
+.menu-btn-burger::after{
+  transform: translateY(8px);
+}
+.menu-btn.open .menu-btn-burger{
+  width: 0;
+}
+.menu-btn.open .menu-btn-burger::before{
+  transform: rotate(45deg) translate(-10px, 10px);
+}
+.menu-btn.open .menu-btn-burger::after{
+  transform: rotate(-45deg) translate(-10px, -10px);
+}
+
+/***************** header about section **********************/
+.about{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 60px;
+}
+.about img{
+  width: 90%;
+  margin-bottom: 30px;
+}
+.about-info{
+  padding: 0 20px;
+}
+.about-info h1{
+  font-weight: 700;
+  font-size: 3.2rem;
+  margin-bottom: 15px;
+}
+.about-info p{
+  color: var(--light-grayish);
+  font-size: 1.2rem;
+}
+.about-cta-btn{
+  display: inline-block;
+  margin: 20px 0;
+}
+.about-info svg{
+  display: block;
+  margin-bottom: 10px;
+}
+.about-info p span{
+  color: var(--blue-lotus);
+  font-weight: 600;
+}
+
+/********************** social media section ********************/
+.social-media-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.social-media-container img{
+  width: 90%;
+  margin-bottom: 30px;
+}
+
+.social-media-text{
+  padding: 0 20px;
+}
+.social-media-text h1{
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.social-media-text p{
+  color: var(--light-grayish);
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.link-resources-wait-list{
+  color: var(--blue-lotus);
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+.link-resources-wait-list i{
+  margin-left: 10px;
+}
+.link-resources-wait-list:hover{
+  color: #4f4f4f;
+}
+
+/************************ comfort section **********************/
+.comfort-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 80px;
+}
+.comfort-container img{
+  width: 70%;
+  margin-bottom: 60px;
+}
+.comfort-text{
+  padding: 0 20px;
+}
+.comfort-text h1{
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.comfort-text p{
+  font-size: 1.2rem;
+  color: var(--light-grayish);
+  margin-bottom: 10px;
+}
+
+/************************* footer ***********************/
+footer{
+  margin-top: 80px;
+  background: var(--soapstone);
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-left h3{
+  margin-bottom: 7px;
+}
+.footer-left p{
+  color: var(--light-grayish);
+}
+.footer-left .made-with-line{
+  color: var(--light-grayish);
+  margin-top: 20px;
+}
+
+.footer-right{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.list{
+  width: 40%;
+  margin-top: 20px;
+}
+.list h3{
+  margin-bottom: 10px;
+  font-weight: 900;
+}
+.list p{
+  margin: 5px 0;
+}
+.list p a{
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: var(--light-grayish);
+  text-decoration: none;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+.list p a:hover{
+  font-weight: 900;
+}
+.list p a::before {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 100%; height: 3px;
+  background: var(--light-grayish);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-in-out;
+}
+.list p a:hover::before{
+  transform: scaleX(1);
+  transform-origin: left;
+}

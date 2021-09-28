@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+:root{
+  /* colors */
+  --wisp-pink: #fbf5f9;
+  --lavender-blush: #fcedf3;
+  --blue-lotus: #664efc;
+  --light-grayish: #4f4f4f;
+  --white: #fff;
+  --black: #000;
+
+  /* font */
+  --dm-sans: 'DM Sans', sans-serif;
+}
+
+
+body{
+  min-height: 100vh;
+  background: linear-gradient(to right, var(--wisp-pink), var(--lavender-blush));
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--dm-sans);
+}
+
+/***************** header *****************/
+header{
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-btn{
+  color: black;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.back-icon{
+  padding: 6px 11px 5px 9px;
+  border: 1px solid #c4c4c4;
+  background: var(--white);
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.back-btn:hover .back-icon{
+  border: 1px solid rgb(27, 27, 27);
+  color: var(--white);
+  background: rgb(27, 27, 27);
+}
+.back-text{
+  display: none;
+}
+
+/************************ main *********************/
+main{
+  margin: 10px 0 0;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*********************** text container *****************/
+.text-container h1{
+  font-size: 2.2rem;
+}
+
+.points-container{
+  margin-top: 20px;
+}
+.point{
+  display: flex;
+  /* justify-content: space-between; */
+}
+.second-point,
+.third-point{
+  margin-top: 15px;
+}
+
+.point i{
+  margin-right: 10px;
+  transform: rotateX(17deg) rotateY(31deg) rotateZ(348deg);
+  font-size: 22px;
+}
+.point .point-heading{
+  font-weight: 900;
+  color: var(--black);
+}
+.point p{
+  color: var(--light-grayish);
+}
+
+/*************** sign up container ********************/
+.sign-up-container{
+  margin-top: 20px;
+  background: var(--white);
+  padding: 30px;
+  border-radius: 10px;
+}
+.sign-up-container h2{
+  margin-bottom: 20px;
+}
+
+.sign-up-container form label{
+  font-weight: 700;
+  margin-left: 2px;
+  font-size: 1.1rem;
+}
+#email,
+#name,
+#password{
+  display: block;
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 15px 20px;
+  border: 1px solid #b3b3b3;
+  border-radius: 5px;
+  margin-top: 8px;
+  transition: 0.3s;
+  margin-bottom: 5px;
+}
+#email:focus,
+#name:focus,
+#password:focus{
+  border: 1px solid black;
+}
+
+.name-container,
+.password-container,
+.terms-container{
+  margin-top: 20px;
+}
+.terms-container{
+  margin-bottom: 20px;
+}
+.terms-checkbox-label{
+  display: flex;
+  margin-bottom: 5px;
+}
+.terms-checkbox-label input{
+  display: block;
+  margin: 5px 5px 0 0;
+  cursor: pointer;
+}
+.sign-up-container form .terms-container label{
+  font-weight: 500;
+}
+.terms-checkbox-label label a{
+  color: #664efc;
+  font-weight: 900;
+}
+
+.sign-up-container input[type=submit]{
+  width: 100%;
+  padding: 15px 0;
+  background: var(--blue-lotus);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  color: var(--white);
+  font-weight: 900;
+  font-size: 17px;
+  cursor: pointer;
+} 
+.error{
+  color: rgb(240, 20, 80);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-left: 5px;
+}
