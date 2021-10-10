@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- css -->
+  <link rel="stylesheet" href="../css/sign-up/style.css">
+  <link rel="stylesheet" href="../css/sign-up/queries.css">
+  
+  <!-- js -->
+  <script defer src="../js/sign-up/script.js"></script>
+
+  <!-- icon -->
+  <script src="https://kit.fontawesome.com/e86048049a.js" crossorigin="anonymous"></script>
+
+  <title>Fiber - Sign Up</title>
+</head>
+<body>
+  
+  <main>
+    <div class="page left-side">
+      <label class="logo">Fiber</label>
+
+      <div class="sign-up-container">
+        <h1>Create your Fiber account</h1>
+
+        <form onsubmit="return validate()">
+          <div class="name-container input">
+            <label for="name">Your Name</label>
+            <input type="text" name="full-name" id="name" placeholder="John Doe">
+          </div>
+
+          <div class="email-container input">
+            <label for="email">E-mail</label>
+            <input type="text" name="email" id="email" placeholder="john@example.com">
+          </div>
+
+          <div class="password-container input">
+            <label for="password">Your Name</label>
+            <div class="password-input">
+              <span class="view-btn"><i class="fa fa-eye"></i></span>
+              <input type="password" name="password" id="password" placeholder="At least 8 characters">
+            </div>
+          </div>
+
+          <div class="terms-condition-container">
+            <div class="checkbox-container">
+              <input type="checkbox" name="checkbox" id="checkbox">
+              <span class="custom-checkbox"></span>
+            </div>
+            <label for="checkbox">By creating an account on Fiber you agree to the <a href="#">Terms & conditions</a>.</label>
+          </div>
+
+          <input type="submit" value="Create Fiber Account">
+        </form>
+
+        <p>Already have an account? <a href="#">Sign in</a></p>
+      </div>
+    </div>
+
+    <div class="page right-side">
+    
+        <div class="slider">
+          <input type="radio" name="radio-btn" id="radio1" checked>
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          
+          <div class="slides">
+
+            <div class="slides-container">
+              <div class="slide first">
+                <img src="../Assets/slide-1.png" alt="">
+              </div>
+              <div class="slide">
+                <img src="../Assets/Slide-2.jpg" alt="">
+              </div>
+              <div class="slide">
+                <img src="../Assets/slide-3.jpg" alt="">
+              </div>
+              <div class="slide">
+                <img src="../Assets/slide-4.jpg" alt="">
+              </div>
+            </div>
+            
+          </div>
+          
+          <div class="text-container">
+            <h1>Unparalleled Templates</h1>
+            <p>
+              Crafted by a team of professional designers, our templates are unparalleled in the market.
+            </p>
+          </div>
+            
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+            </div>
+            
+            <div class="navigation-manual">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+              <label for="radio4" class="manual-btn"></label>
+            </div>
+          </div>
+        </div>
+      </main>
+
+</body>
+</html>

@@ -1,0 +1,361 @@
+/********** for devices with width of 700px or more ***********/
+@media (min-width: 500px) {
+  .hero-btn,
+  .portfolio-text a{
+    display: inline-block;
+  }
+  .hero-btn:last-child{
+    margin-top: 0;
+    margin-left: 10px;
+  }
+  
+  .footer-left{
+    width: 60%;
+  }
+  .footer-right{
+    flex-direction: row;
+  }
+}
+
+/********** for devices with width of 700px or more ***********/
+@media (min-width: 760px){
+  body.stop-scroll{
+    overflow-y: scroll;
+  }
+  nav{
+    padding: 30px 60px 20px;
+  }
+  .menu-btn{
+    display: none;
+  }
+  .menu-header{
+    display: none;
+  }
+  .menu{
+    position: static;
+    transform: translate(0);
+    width: 91%;
+    background: none;
+    padding: 0;
+  }
+  .main-menu{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .menu ul{
+    margin-bottom: 0;
+  }
+  .menu ul li{
+    display: inline-block;
+    margin: 20px;
+  }
+  .btn{
+    display: inline-block;
+  }
+  .btn:last-child{
+    margin: 0;
+  }
+
+  .hero-container{
+    padding: 0 60px;
+  }
+  .rating{
+    display: flex;
+    align-items: center;
+  }
+  .star-container, .rating p{
+    margin: 0;
+    padding: 0 !important;
+  }
+  .star-container{
+    margin-right: 10px;
+  }
+  .hero-text h1{
+    padding-right: 224px;
+  }
+  .hero-text p{
+    padding-right: 125px;
+  }
+
+  .guaranteed-features{
+    display: flex;
+  }
+  .guaranteed-features div:first-child{
+    margin: 0 20px 0 0;
+  }
+
+  .why-fiber-container{
+    padding: 0 60px;
+  }
+  .why-fiber-container h2{
+    width: 460px;
+  }
+  .features-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .feature{
+    width: 45%;
+  }
+
+  .portfolio-container{
+    margin: 0 60px;
+  }
+  .portfolio-text h2{
+    padding-right: 250px;
+  }
+  .portfolio-text p{
+    padding-right: 200px;
+    
+  }
+
+  .testimonials{
+    padding: 0 60px;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-x: auto;
+    margin: 80px 0;
+  }
+
+  .testimonials::-webkit-scrollbar{
+    width: 0;
+  }
+  @supports (scrollbar-color: transparent transparent){
+    .testimonials{
+      scrollbar-color: transparent transparent;
+      scrollbar-width: none;
+    }    
+  }
+  .card{
+    flex-shrink: 0;
+    width: 420px;
+    margin: 0 20px;
+  }
+  .card:first-child{
+    margin-left: 0;
+  }
+  .card:last-child{
+    margin-right: 0;
+  }
+
+  footer{
+    padding: 50px 60px 10px;
+  }
+}
+
+/********** for devices with width of 1000px or more ***********/
+@media (min-width: 1000px) {
+  header{
+    padding-bottom: 100px;
+  }  
+  nav{
+    padding: 30px 80px 20px;
+  }
+  .menu{
+    width: 75%;
+  }
+
+  .hero-container{
+    padding: 0 80px;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin-top: 20px;
+  }
+  .hero-container img{
+    width: 50%;
+  }
+  .hero-text h1{
+    padding-right: 0;
+  }
+  .hero-text p{
+    padding-right: 0;
+  }
+
+  .why-fiber-container{
+    padding: 0 80px;
+  }
+
+  .feature{
+    width: 30%;
+  }
+
+  .portfolio-container{
+    margin: 0 80px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .portfolio-text{
+    width: 45%;
+  }
+  .portfolio-text h2,
+  .portfolio-text p{
+    padding-right: 0;
+  }
+  .portfolio-text p{
+    padding-right: 80px;
+  }
+  .portfolio-container img{
+    width: 50%;
+    height: auto;
+  }
+
+  .testimonials{
+    padding: 0 80px;
+  }
+
+  footer{
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 80px;
+  }
+  .footer-left{
+    width: 25%;
+    margin: 0;
+  }
+  .footer-right{
+    margin: 0;
+    width: 65%;
+  }
+  .col{
+    margin: 0;
+    width: 25%;
+  }
+}
+
+/********** for devices with width of 1200px or more ***********/
+@media (min-width: 1200px) {
+  nav{
+    padding: 40px 120px 20px;
+  }
+  .menu{
+    width: 70%;
+  }
+  
+  .hero-container{
+    padding: 0 120px;
+  }
+  .hero-text{
+    width: 45%;
+  }
+
+  .why-fiber-container{
+    padding: 0 120px;
+  }
+
+  .portfolio-container{
+    margin: 0 120px;
+  }
+  .portfolio-container img{
+    margin-bottom: 0;
+  }
+
+  .testimonials{
+    padding: 0 120px;
+  }
+
+  footer{
+    padding: 40px 120px;
+  }
+}
+
+/********** for devices with width of 1400px or more ***********/
+@media (min-width: 1400px) {
+  nav{
+    padding: 40px 160px 20px;
+  }
+  
+  .hero-container{
+    padding: 0 160px;
+  }
+
+  .why-fiber-container{
+    padding: 0 160px;
+  }
+
+  .portfolio-container{
+    margin: 0 160px;
+  }
+
+  .testimonials{
+    padding: 0 160px;
+  }
+
+  footer{
+    padding: 40px 160px;
+  }
+}
+
+/********** for devices with width of 15200px or more ***********/
+@media (min-width: 1520px) {
+  nav{
+    padding: 40px 180px 20px;
+  }
+
+  .hero-container{
+    padding: 0 180px;
+  }
+
+  .why-fiber-container{
+    padding: 0 180px;
+  }
+
+  .portfolio-container{
+    margin: 0 180px;
+  }
+  .portfolio-text p{
+    padding-right: 100px;
+  }
+
+  .testimonials{
+    padding: 0 180px;
+  }
+
+  footer{
+    padding: 40px 180px;
+  }
+}
+
+/********** for devices with width of 1600px or more ***********/
+@media (min-width: 1600px) {
+  nav{
+    padding: 40px 220px 20px;
+  }
+  .menu{
+    width: 63%;
+  }
+
+  .hero-container{
+    padding: 0 220px;
+  }
+
+  .why-fiber-container{
+    padding: 0 220px;
+  }
+
+  .portfolio-container{
+    margin: 0 220px;
+  }
+  .portfolio-text p{
+    padding-right: 240px;
+  }
+  .portfolio-container img{
+    height: 460px;
+    width: 55%;
+  }
+
+  .testimonials{
+    padding: 0 220px;
+  }
+
+  footer{
+    padding: 40px 220px;
+  }
+}
+
+/********** for devices with width of 1600px or more ***********/
+@media (min-width: 1700px) {
+  .card{
+    width: 440px;
+  }
+}
