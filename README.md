@@ -8,4 +8,4 @@ Challenges by codewell
 * fibdr landing page
 
 
-[click here](https://projects-theta-ten.vercel.app) to view all the solutions.
+[click here](https://projects-developingweb.vercel.app) to view all the solutions.
